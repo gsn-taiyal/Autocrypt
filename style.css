@@ -1,0 +1,190 @@
+body{
+    overflow-x:hidden;
+}
+
+.z-2{
+    z-index: 5;
+}
+
+
+.heightadd{
+    animation: heightadd .5s ease-in-out forwards;
+    overflow: hidden;
+}
+.heightremove{
+    animation: heightremove .5s ease-in-out forwards;
+    overflow: hidden;
+}
+.zindex{
+    z-index: 10;
+}
+
+.rule{
+    height: 5px;
+    width: 100%;
+    border-top: 4px solid balck;
+}
+.menu{
+    margin-top: 120px;
+}
+
+.nav-sections{
+    top: 24%;
+    border-top: 2px solid black;
+    margin-right: 2rem;
+    width: 96.6%;
+}
+.nav-rows{
+    opacity: 0;
+    height: 70%;
+}
+
+.nav-text-add{
+    animation: navTextAdd .4s linear  forwards;
+}
+.nav-text-remove{
+    animation: navTextRemove .4s linear  forwards;
+}
+
+.home{
+    top: 35%;
+    left: 15%;
+}
+
+.textAppear{
+    animation: tA .2s ease-in-out forwards;
+}
+.textDisappear{
+    animation: tD .2s ease-in-out forwards;
+
+}
+.features{
+    display: flex;
+}
+.image-vb{
+    width: 30%;
+    height: 110vh;
+}
+.hj{
+    width: 70%;
+    height: 110vh;
+}
+.box-features{
+    height: 40vw;
+    width: 60vw;
+    background-color: 'white';
+    right:15%;
+    margin-top: 10%;
+}
+.row-features{
+    height: 90%;
+    width: 30%;;
+}
+.abcv{
+    height: 48%;
+    width: 98%;
+    background-color: aliceblue;
+}
+
+.hovering-head{
+    color: pink;
+}
+.width-x{
+    width: 33%;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.faqs-row{
+    height: 90vh;
+    width: 40vw;
+}
+.faqs-row.right{
+    width: 30vw;
+}
+.banner-div{
+    width: 25%;
+    height: auto;
+}
+.banner{
+    height: auto;
+}
+.q{
+    border-bottom: 4px solid black;
+    padding: 3%;
+    padding-left: 0;
+}
+
+.work-with{
+    width: 100%;
+    height: 60vh;
+}
+.border-tx{
+    border-left: solid 2px skyblue;
+}
+@keyframes tA {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes tD {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.solutions{
+    height: 90vh;
+}
+@keyframes heightadd{
+    0%{
+        height: 0;
+        opacity: 0;
+        display: none;
+
+    }
+    100%{
+        height: 50%;
+        opacity: 1;
+        display: block;
+    }
+}
+@keyframes heightremove{
+    0%{
+        height: 50%;
+    }
+    100%{
+        height: 0;
+    }
+}
+
+@keyframes navTextAdd {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+@keyframes navTextRemove {
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(100px);
+
+    }
+}
