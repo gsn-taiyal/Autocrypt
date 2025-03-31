@@ -1,7 +1,9 @@
 body{
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
-
+#myVideo {
+    object-fit: cover;
+}
 .z-2{
     z-index: 5;
 }
