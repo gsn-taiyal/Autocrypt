@@ -50,6 +50,12 @@ body{
     top: 35%;
     left: 15%;
 }
+@media only screen and (max-width: 80rem) {
+    .home{
+        top: 12%;
+        left:3%;
+    }
+}
 
 .textAppear{
     animation: tA .2s ease-in-out forwards;
@@ -58,9 +64,6 @@ body{
     animation: tD .2s ease-in-out forwards;
 
 }
-.features{
-    display: flex;
-}
 .image-vb{
     width: 30%;
     height: 110vh;
@@ -68,6 +71,11 @@ body{
 .hj{
     width: 70%;
     height: 110vh;
+}
+.image-row{
+    background-image: url("./images/featuresbg.jpg");
+    background-repeat: no-repeat;
+    background-clip: border-box;
 }
 .box-features{
     height: 40vw;
@@ -78,8 +86,8 @@ body{
 }
 .row-features{
     height: 90%;
-    width: 30%;;
 }
+
 .abcv{
     height: 48%;
     width: 98%;
@@ -99,20 +107,15 @@ body{
 }
 .faqs-row{
     height: 90vh;
-    width: 40vw;
 }
 .faqs-row.right{
-    width: 30vw;
 }
-.banner-div{
-    width: 25%;
-    height: auto;
-}
+
 .banner{
     height: auto;
 }
 .q{
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid gray;
     padding: 3%;
     padding-left: 0;
 }
@@ -187,4 +190,9 @@ body{
         transform: translateX(100px);
 
     }
+}
+
+#myvideo{
+    object-fit: cover;
+
 }
